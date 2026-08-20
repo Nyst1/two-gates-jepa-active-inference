@@ -1,0 +1,417 @@
+{
+  "schemaVersion": "1.0",
+  "datasetVersion": "two-gates-v1",
+  "checkpointHash": "77ddb6cc625c0dd6c1b4258562f11bd1be422ff04647bb44f2e5d92db5366e43",
+  "checkpointFile": "two-gates-median.pt",
+  "deviceUsedForTraining": "cpu",
+  "selection": "median validation loss across seeds",
+  "selectedSeed": 47,
+  "model": {
+    "type": "minimal JEPA-style conditional latent diffusion",
+    "latentDim": 8,
+    "diffusionSteps": 8,
+    "futureSamples": 16,
+    "planningHorizon": 5
+  },
+  "training": {
+    "transitions": 50000,
+    "epochs": 5,
+    "batchSize": 512,
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "runs": [
+      {
+        "seed": 11,
+        "elapsedSeconds": 42.197764800002915,
+        "history": [
+          {
+            "epoch": 1,
+            "train": {
+              "total": 1.7741096925131883,
+              "diffusion": 0.9117446979389915,
+              "deterministic": 0.11914386057966872,
+              "variance": 0.5808661195296275,
+              "covariance": 0.32326176342684493,
+              "inverse": 1.3272970341428925,
+              "position": 0.02970307492474212
+            },
+            "validation": {
+              "total": 1.547663390636444,
+              "diffusion": 0.7623811691999436,
+              "deterministic": 0.060585842467844486,
+              "variance": 0.4837333410978317,
+              "covariance": 0.4600764513015747,
+              "inverse": 1.3079638123512267,
+              "position": 0.02008907441049814
+            }
+          },
+          {
+            "epoch": 2,
+            "train": {
+              "total": 1.1755362077604365,
+              "diffusion": 0.43019996225079404,
+              "deterministic": 0.03297370542548125,
+              "variance": 0.449063453493239,
+              "covariance": 0.6238267150106309,
+              "inverse": 1.3007750948773156,
+              "position": 0.01782389763223974
+            },
+            "validation": {
+              "total": 0.9526700347661972,
+              "diffusion": 0.23374332562088967,
+              "deterministic": 0.023985897935926915,
+              "variance": 0.3942232981324196,
+              "covariance": 0.8991485297679901,
+              "inverse": 1.3032771587371825,
+              "position": 0.017876335885375738
+            }
+          },
+          {
+            "epoch": 3,
+            "train": {
+              "total": 0.9151669016367272,
+              "diffusion": 0.21579599437079852,
+              "deterministic": 0.019222966866874244,
+              "variance": 0.4047392535058758,
+              "covariance": 0.8096201721625992,
+              "inverse": 1.297265333465383,
+              "position": 0.01736589699181952
+            },
+            "validation": {
+              "total": 0.8985034018754959,
+              "diffusion": 0.21350569352507592,
+              "deterministic": 0.01762573649175465,
+              "variance": 0.40928861051797866,
+              "covariance": 0.7210465401411057,
+              "inverse": 1.2967646777629853,
+              "position": 0.017515100445598362
+            }
+          },
+          {
+            "epoch": 4,
+            "train": {
+              "total": 0.8804392135595973,
+              "diffusion": 0.21546542908571945,
+              "deterministic": 0.023566600418637826,
+              "variance": 0.3536559950701798,
+              "covariance": 0.7259257496157779,
+              "inverse": 1.2784757448148123,
+              "position": 0.016420216346749023
+            },
+            "validation": {
+              "total": 0.8749387204647064,
+              "diffusion": 0.22881496995687484,
+              "deterministic": 0.030509280413389205,
+              "variance": 0.29523064345121386,
+              "covariance": 0.7135545581579208,
+              "inverse": 1.2597438037395476,
+              "position": 0.016336228279396892
+            }
+          },
+          {
+            "epoch": 5,
+            "train": {
+              "total": 0.8858962692791903,
+              "diffusion": 0.24459057933167566,
+              "deterministic": 0.04781371145214461,
+              "variance": 0.25365339012085636,
+              "covariance": 0.812972670114493,
+              "inverse": 1.2456471059895768,
+              "position": 0.01571810931627509
+            },
+            "validation": {
+              "total": 0.8962922126054764,
+              "diffusion": 0.25516255497932433,
+              "deterministic": 0.06933868043124676,
+              "variance": 0.22426832020282744,
+              "covariance": 0.8795869588851929,
+              "inverse": 1.2357133328914642,
+              "position": 0.01591561292298138
+            }
+          }
+        ],
+        "validationLoss": 0.8962922126054764
+      },
+      {
+        "seed": 29,
+        "elapsedSeconds": 43.26736360001087,
+        "history": [
+          {
+            "epoch": 1,
+            "train": {
+              "total": 1.7965073193175882,
+              "diffusion": 0.9147070284131207,
+              "deterministic": 0.14676210850099974,
+              "variance": 0.5561231359650817,
+              "covariance": 0.3500744138897515,
+              "inverse": 1.3225372426117523,
+              "position": 0.020996884831899328
+            },
+            "validation": {
+              "total": 1.6209620535373688,
+              "diffusion": 0.7743388056755066,
+              "deterministic": 0.15674882680177687,
+              "variance": 0.5242973417043686,
+              "covariance": 0.3150849834084511,
+              "inverse": 1.3059139966964721,
+              "position": 0.018209210969507693
+            }
+          },
+          {
+            "epoch": 2,
+            "train": {
+              "total": 1.245341632939592,
+              "diffusion": 0.4660965564507472,
+              "deterministic": 0.07069980433281464,
+              "variance": 0.46979909795749036,
+              "covariance": 0.5280550782439075,
+              "inverse": 1.2988496173786213,
+              "position": 0.017689549564560758
+            },
+            "validation": {
+              "total": 0.9910411983728409,
+              "diffusion": 0.25649343281984327,
+              "deterministic": 0.04291457813233137,
+              "variance": 0.4212954223155975,
+              "covariance": 0.7537471711635589,
+              "inverse": 1.2981870234012605,
+              "position": 0.01783254905603826
+            }
+          },
+          {
+            "epoch": 3,
+            "train": {
+              "total": 0.9341435802133777,
+              "diffusion": 0.2338634406841254,
+              "deterministic": 0.037589451109495346,
+              "variance": 0.37991859188562704,
+              "covariance": 0.739317645000506,
+              "inverse": 1.283148373229594,
+              "position": 0.016957299571625794
+            },
+            "validation": {
+              "total": 0.9064335435628891,
+              "diffusion": 0.23876798450946807,
+              "deterministic": 0.04046292025595903,
+              "variance": 0.29336239099502565,
+              "covariance": 0.7795970618724823,
+              "inverse": 1.2644789040088653,
+              "position": 0.016725207678973675
+            }
+          },
+          {
+            "epoch": 4,
+            "train": {
+              "total": 0.9186378528800192,
+              "diffusion": 0.2593360505526579,
+              "deterministic": 0.06357205244182032,
+              "variance": 0.2621467122925988,
+              "covariance": 0.8328065638300739,
+              "inverse": 1.245227329338653,
+              "position": 0.01617380449713408
+            },
+            "validation": {
+              "total": 0.9295101732015609,
+              "diffusion": 0.2731958761811256,
+              "deterministic": 0.08871273994445801,
+              "variance": 0.25413634181022643,
+              "covariance": 0.8233286589384079,
+              "inverse": 1.2324555158615111,
+              "position": 0.016316678328439593
+            }
+          },
+          {
+            "epoch": 5,
+            "train": {
+              "total": 0.9297658401199534,
+              "diffusion": 0.274880837979196,
+              "deterministic": 0.11319758394096471,
+              "variance": 0.24367639214932163,
+              "covariance": 0.8271948250034188,
+              "inverse": 1.2146358158014998,
+              "position": 0.015468336476743975
+            },
+            "validation": {
+              "total": 0.9273443818092346,
+              "diffusion": 0.27684174478054047,
+              "deterministic": 0.12692678309977054,
+              "variance": 0.23342547938227654,
+              "covariance": 0.8239256173372269,
+              "inverse": 1.2000475227832794,
+              "position": 0.015344026777893306
+            }
+          }
+        ],
+        "validationLoss": 0.9273443818092346
+      },
+      {
+        "seed": 47,
+        "elapsedSeconds": 43.57021479999821,
+        "history": [
+          {
+            "epoch": 1,
+            "train": {
+              "total": 1.7635675819614265,
+              "diffusion": 0.9128804704811,
+              "deterministic": 0.04597417056513361,
+              "variance": 0.5531054772908175,
+              "covariance": 0.3488191426402121,
+              "inverse": 1.3420741829691054,
+              "position": 0.024842866165917132
+            },
+            "validation": {
+              "total": 1.5762712001800536,
+              "diffusion": 0.7717423051595688,
+              "deterministic": 0.08348905704915524,
+              "variance": 0.4555835992097855,
+              "covariance": 0.48896816074848176,
+              "inverse": 1.3074346244335175,
+              "position": 0.019441913440823556
+            }
+          },
+          {
+            "epoch": 2,
+            "train": {
+              "total": 1.2129880778397186,
+              "diffusion": 0.44927069959761223,
+              "deterministic": 0.05501464094165005,
+              "variance": 0.4401160097574886,
+              "covariance": 0.6306284232230126,
+              "inverse": 1.2988643691509585,
+              "position": 0.017953713318403765
+            },
+            "validation": {
+              "total": 0.963611501455307,
+              "diffusion": 0.23727229833602906,
+              "deterministic": 0.03966466002166271,
+              "variance": 0.4074967846274376,
+              "covariance": 0.6938473671674729,
+              "inverse": 1.2936318874359132,
+              "position": 0.01820949390530586
+            }
+          },
+          {
+            "epoch": 3,
+            "train": {
+              "total": 0.9174909033352816,
+              "diffusion": 0.2283510399770133,
+              "deterministic": 0.03757189817820923,
+              "variance": 0.2977840170452866,
+              "covariance": 0.8616901281513746,
+              "inverse": 1.2693160410168804,
+              "position": 0.01723694257862583
+            },
+            "validation": {
+              "total": 0.910380631685257,
+              "diffusion": 0.24433642327785493,
+              "deterministic": 0.040720576606690886,
+              "variance": 0.2301163800060749,
+              "covariance": 0.9953793615102768,
+              "inverse": 1.2546588778495789,
+              "position": 0.0167416469193995
+            }
+          },
+          {
+            "epoch": 4,
+            "train": {
+              "total": 0.912127007412005,
+              "diffusion": 0.25499574934379965,
+              "deterministic": 0.05706698112661326,
+              "variance": 0.2322721547341045,
+              "covariance": 0.925761813604379,
+              "inverse": 1.2419212950935847,
+              "position": 0.015663506156658825
+            },
+            "validation": {
+              "total": 0.9144164949655533,
+              "diffusion": 0.2650564625859261,
+              "deterministic": 0.07003725804388523,
+              "variance": 0.22706546261906624,
+              "covariance": 0.8920865923166275,
+              "inverse": 1.2314389944076538,
+              "position": 0.015360591327771544
+            }
+          },
+          {
+            "epoch": 5,
+            "train": {
+              "total": 0.9055735536768467,
+              "diffusion": 0.2642982511580745,
+              "deterministic": 0.08255839706221714,
+              "variance": 0.21320640984215314,
+              "covariance": 0.8735113596614403,
+              "inverse": 1.214604810823368,
+              "position": 0.0146997915109313
+            },
+            "validation": {
+              "total": 0.8987599581480026,
+              "diffusion": 0.26552119851112366,
+              "deterministic": 0.09328399077057839,
+              "variance": 0.20314246341586112,
+              "covariance": 0.8260550916194915,
+              "inverse": 1.1985763311386108,
+              "position": 0.014705037930980325
+            }
+          }
+        ],
+        "validationLoss": 0.8987599581480026
+      }
+    ]
+  },
+  "pca": {
+    "center": [
+      -2.6719281673431396,
+      -2.702533483505249,
+      2.7823424339294434,
+      -0.8703302145004272,
+      3.6588733196258545,
+      1.844614028930664,
+      2.3969228267669678,
+      -2.467414379119873
+    ],
+    "components": [
+      [
+        -0.17375369369983673,
+        0.42445507645606995,
+        -0.14277531206607819,
+        0.6252873539924622,
+        0.07535423338413239,
+        -0.2898392081260681,
+        0.220765620470047,
+        -0.4897509515285492
+      ],
+      [
+        0.4635182321071625,
+        0.13356119394302368,
+        0.5246642827987671,
+        0.15395908057689667,
+        0.39336320757865906,
+        -0.12095227092504501,
+        0.4395824372768402,
+        0.32517603039741516
+      ]
+    ]
+  },
+  "qualityAssurance": {
+    "passed": true,
+    "checks": {
+      "actionShuffleRatioAtLeast1_2": true,
+      "minimumLatentStdAtLeast0_25": true,
+      "positionMseAtMost0_03": true,
+      "gateBeliefBrierAtMost0_08": true
+    },
+    "actionConditioning": {
+      "correctMse": 0.09060949087142944,
+      "shuffledMse": 0.11133851110935211,
+      "shuffledToCorrectRatio": 1.2287731170654297
+    },
+    "latent": {
+      "minimumDimensionStd": 0.49797266721725464
+    },
+    "positionHeadMse": 0.015656188130378723,
+    "gateBeliefBrier": 0.003476812271401286
+  }
+}

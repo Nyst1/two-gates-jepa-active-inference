@@ -1,0 +1,5 @@
+*.pdf binary
+*.pt binary
+Two-Gates-Standalone.html linguist-generated=true
+artifacts/replays/*.json linguist-generated=true
+frontend/public/replays/*.json linguist-generated=true
